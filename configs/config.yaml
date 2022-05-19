@@ -10,3 +10,9 @@ config:
   kubernetes_manage_tools:
     rainbond_ui: http://rainbond.xxx.com/
     kubernetes_ui: https://k8sui.xxx.com/
+
+rsyncserver:
+  logfile: ./imagersync.log
+  auth:
+    admin: admin333
+    weiqiang: weiqiang
