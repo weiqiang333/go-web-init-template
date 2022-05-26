@@ -22,7 +22,7 @@ metadata:
   namespace: go
 spec:
   rules:
-    - host: go.novastar.tech
+    - host: go.xxx.tech
       http:
         paths:
           - path: /
@@ -79,7 +79,7 @@ spec:
     spec:
       containers:
         - name: go-default-service
-          image: harbor.go.novastar.tech/devops/go-default-service:v0.1
+          image: harbor.go.xxx.tech/devops/go-default-service:v0.1
           imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 5
@@ -125,7 +125,7 @@ spec:
 ---
 apiVersion: v1
 data:
-  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSIxNzIuMTYuODIuMjI5IjogewoJCQkiYXV0aCI6ICJZV1J0YVc0NlNHRnlZbTl5TVRJek5EVT0iCgkJfSwKCQkiaGFyYm9yLnNwZC5ub3Zhc3Rhci50ZWNoIjogewoJCQkiYXV0aCI6ICJjM0JrT2s1dmRtRnpkR0Z5WHpJd01qQT0iCgkJfQoJfSwKCSJIdHRwSGVhZGVycyI6IHsKCQkiVXNlci1BZ2VudCI6ICJEb2NrZXItQ2xpZW50LzE4LjAzLjAtY2UgKGxpbnV4KSIKCX0KfQ==
+  .dockerconfigjson: xxx
 kind: Secret
 metadata:
   name: gov2.0harbor

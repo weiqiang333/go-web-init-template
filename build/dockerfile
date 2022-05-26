@@ -1,4 +1,4 @@
-FROM harbor.xxx.com/base/centos7.6:latest
+FROM centos7.6:latest
 
 COPY build/go-default-service /opt/go-default-service
 RUN mkdir /opt/web/ /opt/configs/
