@@ -20,4 +20,4 @@ kubectl apply -f build/go_default_service-deploy.yaml
 ### 演示
 - 初始页面
 
-![初始页面演示](./doc/img/init_demo.png)
+![初始页面演示](https://github.com/weiqiang333/go-web-init-template/doc/img/init_demo.png)
