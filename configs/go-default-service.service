@@ -1,0 +1,16 @@
+[Unit]
+Description=Default Service
+After=network.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/data/service/default-service/
+ExecStart=/data/service/default-service/go-default-service --configFile /data/service/default-service/configs/config.yaml
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
