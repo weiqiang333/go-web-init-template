@@ -1,7 +1,9 @@
+# author: weiqiang; date: 2022-12
 FROM centos7.6:latest
 
 COPY build/go-default-service /opt/go-default-service
-RUN mkdir /opt/web/ /opt/configs/
+RUN mkdir -p /opt/web/ /opt/configs/
+COPY build/dockerfile /opt/
 COPY configs /opt/configs
 COPY web/static /opt/web/static
 COPY web/templates /opt/web/templates
