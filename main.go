@@ -46,6 +46,9 @@ func engine() *gin.Engine {
 			"status": "healthy",
 		})
 	})
+	router.NoRoute(func(c *gin.Context) {
+		c.HTML(http.StatusNotFound, "404.html", gin.H{})
+	})
 	router.POST("/-/reload", reloadConfig)
 	router.GET("/metrics", gin.WrapH(promhttp.Handler()))
 
