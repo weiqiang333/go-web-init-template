@@ -1,4 +1,4 @@
-module go-web-init-template
+module github.com/weiqiang333/go-web-init-template
 
 go 1.18
 
