@@ -10,9 +10,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-
-	"go-web-init-template/internal/api"
-	"go-web-init-template/internal/metrics"
+	"github.com/weiqiang333/go-web-init-template/internal/api"
+	"github.com/weiqiang333/go-web-init-template/internal/metrics"
 )
 
 func init() {
